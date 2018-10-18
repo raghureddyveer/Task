@@ -1,0 +1,32 @@
+<div class="box-shadow">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner ">
+        <div class="page-logo">
+            <img src="assets/imags/appiness-logo.png" alt="logo" class="logo-default" />
+            <span (click)="logout()" class="link">Logout</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <h4>
+            Profile Details
+        </h4>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" *ngFor="let detail of details;">
+            <div class="card">
+                <div class="content">
+                    <p>Name : {{detail.name}}</p>
+                    <p>User Name : {{detail.userName}}</p>
+                    <p>Email : {{detail.email}}</p>
+                    <p>Mobile No : {{detail.mobileNo}}</p>
+                    <p>User Type : {{detail.userType}}</p>
+                    <p>Address : {{detail.address}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

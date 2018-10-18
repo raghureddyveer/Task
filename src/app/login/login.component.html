@@ -1,0 +1,17 @@
+<div class="loginbox">
+  <div class="text-ctr">
+    <img src="assets/imags/appiness-logo.png" class="image">
+  </div>
+  <h1>Login Here</h1>
+  <form>
+    <label>Username</label>
+    <input type="text" [(ngModel)]="userName" name="username">
+    <label>Password</label>
+    <input type="password" name="password" [(ngModel)]="password">
+    <input type="submit" name="" value="Login" (click)="login()">
+    <div class="signup">
+      <span>Not A Member ? </span>
+      <a class="link" (click)="goToSignup()">Signup</a>
+    </div>
+  </form>
+</div>
